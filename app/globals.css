@@ -2,18 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: #000;
-  color: #fff;
+html, body, main {
+  height: 100%;
+  width: 100%;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  background-color: black;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+/* Ensure the canvas fills the screen */
 canvas {
-  display: block;
   touch-action: none;
+  width: 100vw !important;
+  height: 100vh !important;
 }
